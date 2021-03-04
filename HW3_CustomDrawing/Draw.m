@@ -9,11 +9,9 @@
 
 @implementation Draw
 @synthesize unit_x,unit_y;
-//@synthesize cityLabel;
 
 
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
+
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
@@ -41,9 +39,7 @@
     
     CGContextRef context = UIGraphicsGetCurrentContext();
     
-    //[[UIColor redColor] setFill];
     CGContextFillRect(context,bounds);
-    //CGContextRelease(context,  _Nullable c);
     
     [[UIColor blackColor] setFill];
     CGContextFillEllipseInRect(context, CGRectMake(unit_x, unit_y, 20, 20));
