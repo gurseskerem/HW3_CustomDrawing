@@ -10,7 +10,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface Draw : UIView
-
+@property (nonatomic) float unit_x,unit_y;
 @end
 
 NS_ASSUME_NONNULL_END
