@@ -11,6 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Draw : UIView
 @property (nonatomic) float unit_x,unit_y;
+@property (nonatomic,strong) IBOutlet UILabel *cityLabel;
 @end
 
 NS_ASSUME_NONNULL_END
